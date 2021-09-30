@@ -1,0 +1,113 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "editor.action.transformToUppercase",
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.transformToLowercase",
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "editor.action.transformToTitlecase",
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "editor.action.transformToSnakecase",
+    },
+    {
+        "key": "alt+5",
+        "command": "command-runner.run",
+        "args": {
+            "command": "make && server/cyams-server -d .. -c ../conf/dev"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+5",
+        "command": "command-runner.run",
+        "args": {
+            "command": "make && server/cyams-server -d .. -c ../conf/dev --trace"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+4",
+        "command": "command-runner.run",
+        "args": {
+            "command": "python3 -m http.server 8000"
+        }
+    },
+    {
+        "key": "ctrl+s",
+        "command": "saveAll"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.scm.focus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "editor.action.toggleMinimap"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+left",
+        "command": "history.showPrevious",
+        "when": "historyNavigationEnabled && historyNavigationWidget"
+    },
+    {
+        "key": "alt+up",
+        "command": "-history.showPrevious",
+        "when": "historyNavigationEnabled && historyNavigationWidget"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorRedo"
+    }
+]
